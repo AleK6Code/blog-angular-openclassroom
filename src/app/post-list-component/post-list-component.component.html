@@ -1,0 +1,20 @@
+<li [ngClass]="{
+  'list-group-item': true, 
+  'list-group-item-success': postLoveIts > 0, 
+  'list-group-item-danger': postLoveIts < 0
+}"
+>
+  <h2>{{ postTitle }}</h2>
+  <span class="postDate">{{ postDate | date: 'short' | uppercase }}</span>
+  <p class="postComment">{{ PostComment }}</p>
+  <div class="postLoveRow">
+    <span>{{ postLoveIts }} <i [ngClass]="{
+      'fa': true,
+      'fa-heart': postLoveIts > 0,
+      'fa-heartbeat': postLoveIts<0,
+      'fa-heart-o': postLoveIts ==0
+    }"></i></span>
+    <button id="lovebtn" class="btn btn-success" (click)="getMore()">I Love it !</button>
+    <button id="hatebtn" class="btn btn-danger" (click)="getLess()">I don't love it</button>
+  </div>
+</li>
