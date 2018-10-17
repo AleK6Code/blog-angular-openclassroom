@@ -6,7 +6,9 @@
 >
   <h2>{{ postTitle }}</h2>
   <span class="postDate">{{ postDate | date: 'short' | uppercase }}</span>
-  <p class="postComment">{{ PostComment }}</p>
+  <div class="container">
+    <p class="postComment">{{ PostComment }}</p>
+  </div>
   <div class="postLoveRow">
     <span>{{ postLoveIts }} <i [ngClass]="{
       'fa': true,
