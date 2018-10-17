@@ -1,0 +1,6 @@
+Le code complet est diponible à l'adresse : https://github.com/AleK6Code/blog-angular-openclassroom
+
+Je me suis un petit peu amusé avec le css, mais sans plus.
+En espérant que ça plaise.
+
+Cordialement...
