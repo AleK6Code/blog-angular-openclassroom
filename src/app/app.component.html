@@ -1,12 +1,6 @@
 <div class="container">
   <h1 style="text-align: center;">This Is The BLOG !!!</h1>
-  <ul class="list-group">
-    <app-post-list-component
-      *ngFor="let post of Posts" 
-      [postTitle]="post.title" 
-      [PostComment]="post.content" 
-      [postLoveIts]="post.loveIts" 
-      [postDate]="post.created_at"
-    ></app-post-list-component>
-  </ul>
+    <app-post-list
+      [Post]="Posts"
+    ></app-post-list>
 </div>

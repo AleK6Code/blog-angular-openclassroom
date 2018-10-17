@@ -1,13 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-post-list-component',
-  templateUrl: './post-list-component.component.html',
-  styleUrls: ['./post-list-component.component.scss']
+  selector: 'app-post-list-item',
+  templateUrl: './post-list-item.component.html',
+  styleUrls: ['./post-list-item.component.scss']
 })
-export class PostListComponentComponent implements OnInit {
+export class PostListItemComponent implements OnInit {
 
-  
   @Input() postTitle: string;
   @Input() PostComment: string;
   @Input() postLoveIts: number;
@@ -31,5 +30,4 @@ export class PostListComponentComponent implements OnInit {
    }
   ngOnInit() {
   }
-
 }
